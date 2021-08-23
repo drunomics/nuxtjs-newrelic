@@ -1,0 +1,23 @@
+{
+  "name": "nuxtjs-module-newrelic",
+  "version": "1.0.0",
+  "description": "A Nuxt.js module to get APM data from your application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drunomics/nuxtjs-module-newrelic.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drunomics/nuxtjs-module-newrelic/issues"
+  },
+  "homepage": "https://github.com/drunomics/nuxtjs-module-newrelic#readme",
+  "dependencies": {
+    "@newrelic/native-metrics": "^7.0.1",
+    "newrelic": "^8.1.0"
+  }
+}
