@@ -28,6 +28,7 @@ npm install git+ssh://git@github.com/drunomics/nuxt-module-newrelic.git
 ```
 NEWRELIC_LICENSE=your_newrelic_license
 NEWRELIC_APP_NAME=application_name
+NEWRELIC_BROWSER_MONITORING_ENABLED=false
 ```
 
 ## Options
