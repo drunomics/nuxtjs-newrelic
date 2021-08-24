@@ -8,7 +8,7 @@ const path = require('path')
  */
 async function place (dir) {
   console.log(__dirname)
-  fs.readFile(path.join(__dirname, 'config/newrelic.js'), 'utf8', (err, data) => {
+  fs.readFile(path.join(__dirname, 'newrelic.js'), 'utf8', (err, data) => {
     if (err) {
       console.log('There was an error reading newrelic.js template.' + err)
       return
