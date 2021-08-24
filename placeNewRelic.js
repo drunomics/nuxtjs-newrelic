@@ -6,23 +6,28 @@ const path = require('path')
  * @constructor
  * @param {string} dir - The directory where `newrelic.js` should be placed.
  */
-async function place (dir) {
-  console.log(__dirname)
-  fs.readFile(path.join(__dirname, 'newrelic.js'), 'utf8', (err, data) => {
-    if (err) {
-      console.log('There was an error reading newrelic.js template.' + err)
-      return
-    }
 
-    const newrelicpath = path.join(dir, 'newrelic.js')
-    fs.writeFile(newrelicpath, data, 'utf8', (err) => {
+function placeNewRelicPromise (dir) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(path.join(__dirname, 'newrelic.js'), 'utf8', (err, data) => {
       if (err) {
-        console.log(`There was an error writing the newrelic.js file to ${newrelicpath}`, err)
+        reject(err)
+      }
+
+      const newrelicpath = path.join(dir, 'newrelic.js')
+      if (!fs.existsSync(newrelicpath)) {
+        fs.writeFile(newrelicpath, data, 'utf8', (err) => {
+          if (err) {
+            reject(err)
+          } else {
+            resolve(newrelicpath)
+          }
+        })
       } else {
-        console.log(`Successfully wrote newrelic.js to ${newrelicpath}`)
+        resolve(newrelicpath)
       }
     })
   })
 }
 
-module.exports = place
+module.exports = placeNewRelicPromise
