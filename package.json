@@ -1,23 +1,54 @@
 {
-  "name": "nuxtjs-module-newrelic",
-  "version": "1.0.0",
-  "description": "A Nuxt.js module to get APM data from your application.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/drunomics/nuxtjs-module-newrelic.git"
-  },
-  "author": "",
+  "name": "nuxt-module-newrelic",
+  "version": "1.0.0-beta1",
+  "description": "A Nuxt.js module to easily add NewRelic APM data to your project.",
+  "repository": "drunomics/nuxt-module-newrelic",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/drunomics/nuxtjs-module-newrelic/issues"
+  "bin": {
+    "nuxt-module-newrelic-init": "bin/nuxt-module-newrelic-init.js"
   },
-  "homepage": "https://github.com/drunomics/nuxtjs-module-newrelic#readme",
+  "contributors": [
+    {
+      "name": "Wolfgang Ziegler // fago <fago@wolfgangziegler.net>"
+    },
+    {
+      "name": "Maximilian Götz-Mikus <max@goetz-mikus.com>"
+    },
+    {
+      "name": "Alexandru Ieremia <alex_ieremia@icloud.com"
+    }
+  ],
+  "files": [
+    "lib",
+    "scaffold"
+  ],
+  "main": "lib/module.js",
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue .",
+    "release": "npm run test && standard-version && git push --follow-tags && npm publish",
+    "test": "npm run lint && jest"
+  },
   "dependencies": {
     "@newrelic/native-metrics": "^7.0.1",
     "newrelic": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxt/test-utils": "^0.1.2",
+    "@nuxtjs/eslint-config": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "eslint": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "nuxt-edge": "latest",
+    "standard-version": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
