@@ -41,10 +41,8 @@
     "@nuxt/test-utils": "^0.1.2",
     "@nuxtjs/eslint-config": "latest",
     "babel-eslint": "latest",
-    "babel-jest": "latest",
     "eslint": "latest",
     "husky": "latest",
-    "jest": "latest",
     "nuxt-edge": "latest",
     "standard-version": "latest"
   },
