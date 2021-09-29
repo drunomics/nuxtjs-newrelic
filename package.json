@@ -4,9 +4,6 @@
   "description": "A Nuxt.js module to easily add NewRelic APM data to your project.",
   "repository": "drunomics/nuxt-module-newrelic",
   "license": "MIT",
-  "bin": {
-    "nuxt-module-newrelic-init": "bin/nuxt-module-newrelic-init.js"
-  },
   "contributors": [
     {
       "name": "Wolfgang Ziegler // fago <fago@wolfgangziegler.net>"
@@ -19,8 +16,7 @@
     }
   ],
   "files": [
-    "lib",
-    "scaffold"
+    "lib"
   ],
   "main": "lib/module.js",
   "scripts": {
