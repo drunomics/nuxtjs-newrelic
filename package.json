@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-module-newrelic",
+  "name": "@drunomics/nuxtjs-newrelic",
   "version": "1.0.0-beta1",
   "description": "A Nuxt.js module to easily add NewRelic APM data to your project.",
-  "repository": "drunomics/nuxt-module-newrelic",
+  "repository": "drunomics/nuxtjs-newrelic",
   "license": "MIT",
   "contributors": [
     {
