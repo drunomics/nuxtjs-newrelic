@@ -29,6 +29,19 @@ NEW_RELIC_LICENSE_KEY=your_newrelic_license
 NEW_RELIC_APP_NAME=Default
 ```
 
+To disable config and use only vars:
+```
+NEW_RELIC_NO_CONFIG_FILE=true
+```
+
+## Docs
+1. NewRelic Node.js agent documentation:
+
+https://docs.newrelic.com/docs/agents/nodejs-agent/installation-configuration/nodejs-agent-configuration
+
+2. List of all dotenv variables:
+
+https://docs.newrelic.com/docs/agents/nodejs-agent/installation-configuration/nodejs-agent-configuration/#exports_config
 
 ## License
 

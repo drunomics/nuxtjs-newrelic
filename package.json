@@ -1,23 +1,48 @@
 {
-  "name": "nuxtjs-module-newrelic",
-  "version": "1.0.0",
-  "description": "A Nuxt.js module to get APM data from your application.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/drunomics/nuxtjs-module-newrelic.git"
-  },
-  "author": "",
+  "name": "@drunomics/nuxtjs-newrelic",
+  "version": "1.0.0-beta1",
+  "description": "A Nuxt.js module to easily add NewRelic APM data to your project.",
+  "repository": "drunomics/nuxtjs-newrelic",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/drunomics/nuxtjs-module-newrelic/issues"
+  "contributors": [
+    {
+      "name": "Wolfgang Ziegler // fago <fago@wolfgangziegler.net>"
+    },
+    {
+      "name": "Maximilian Götz-Mikus <max@goetz-mikus.com>"
+    },
+    {
+      "name": "Alexandru Ieremia <alex_ieremia@icloud.com"
+    }
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/module.js",
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue .",
+    "release": "npm run test && standard-version && git push --follow-tags && npm publish",
+    "test": "npm run lint && jest"
   },
-  "homepage": "https://github.com/drunomics/nuxtjs-module-newrelic#readme",
   "dependencies": {
     "@newrelic/native-metrics": "^7.0.1",
     "newrelic": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxt/test-utils": "^0.1.2",
+    "@nuxtjs/eslint-config": "latest",
+    "babel-eslint": "latest",
+    "eslint": "latest",
+    "husky": "latest",
+    "nuxt-edge": "latest",
+    "standard-version": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
