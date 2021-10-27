@@ -26,15 +26,15 @@
     "test": "npm run lint && jest"
   },
   "dependencies": {
-    "@newrelic/native-metrics": "^7.0.1",
-    "newrelic": "^8.1.0"
+    "@newrelic/native-metrics": "^7.0.2",
+    "newrelic": "^8.5.0"
   },
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
-    "@nuxt/test-utils": "^0.1.2",
+    "@nuxt/test-utils": "^0.2.2",
     "@nuxtjs/eslint-config": "latest",
     "babel-eslint": "latest",
     "eslint": "latest",
