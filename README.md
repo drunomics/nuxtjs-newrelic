@@ -9,16 +9,16 @@ A Nuxt.js module to easily add NewRelic APM data to your project.
 
 ## Setup
 
-1. Add `nuxt-module-newrelic` dependency to your Nuxt.js project
+1. Add `drunomics/nuxtjs-newrelic` dependency to your Nuxt.js project
 ```
-npm install drunomics/nuxt-module-newrelic
+npm install drunomics/nuxtjs-newrelic
 ```
 
-2. Add `nuxt-module-newrelic` to the modules section of nuxt.config.js
+2. Add `@drunomics/nuxtjs-newrelic` to the modules section of nuxt.config.js
 ```
 {
   modules: [
-    'nuxt-module-newrelic'
+    '@drunomics/nuxtjs-newrelic'
   ]
 }
 ```
