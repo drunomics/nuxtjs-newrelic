@@ -1,7 +1,7 @@
 # nuxtjs-newrelic
 A Nuxt.js module to easily add NewRelic APM data to your project.
 
-**Note:** By default, this module only gets the Node.js server data, without browser monitoring.
+**Note:** This module only collects data from the Node.js server. For browser monitoring, you will need to add the Nuxt.js infrastructure agent, [see instructions here](https://docs.newrelic.com/docs/infrastructure/host-integrations/host-integrations-list/nuxt-js-integration/).
 
 ## Pre-requisites
 
