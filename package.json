@@ -26,8 +26,8 @@
     "test": "npm run lint && jest"
   },
   "dependencies": {
-    "@newrelic/native-metrics": "^8.0.0",
-    "newrelic": "^8.15.0"
+    "@newrelic/native-metrics": "9.0.0",
+    "newrelic": "9.7.3"
   },
   "devDependencies": {
     "@babel/core": "latest",
