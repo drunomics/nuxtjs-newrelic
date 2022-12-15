@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@newrelic/native-metrics": "9.0.0",
-    "newrelic": "9.7.3"
+    "newrelic": "9.7.4"
   },
   "devDependencies": {
     "@babel/core": "latest",
